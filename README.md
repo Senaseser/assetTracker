@@ -1,21 +1,21 @@
 # AssetTracker UI
 
-AssetTrackerPro UI, varlik yonetimi icin gelistirilmis React tabanli bir arayuzdur. Bu dokuman, adim adim kurulum ve calistirma surecini sorunsuz tamamlamasi icin hazirlanmistir.
+AssetTrackerPro UI, varlık yönetimi için geliştirilmiş React tabanlı bir arayüzdür. Bu doküman, adım adım kurulum ve çalıştırma sürecini sorunsuz tamamlaması için hazırlanmıştır.
 
-## Teknoloji Yigini
+## Teknoloji Yığını
 
 - React 19 + TypeScript
 - Vite
 - Tailwind CSS
-- Zustand (state yonetimi)
+- Zustand (state yönetimi)
 - Axios (API istekleri)
 - React Toastify (bildirimler)
 
 ## Gereksinimler
 
-- Node.js 20+ (20.19+ onerilir)
+- Node.js 20+ (20.19+ önerilir)
 - npm 10+
-- Calisan bir backend API (varsayilan: `http://localhost:5000`)
+- Çalışan bir backend API (varsayılan: `http://localhost:5000`)
 
 ## 1) Projeyi Klonla
 
@@ -24,42 +24,41 @@ git clone https://github.com/Senaseser/assetTracker.git
 cd assetTracker
 ```
 
-## 2) Bagimliliklari Yukle
+## 2) Bağımlılıkları Yükle
 
 ```bash
 npm install
 ```
 
-## 3) Uygulamayi Calistir
+## 3) Uygulamayı Çalıştır
 
 ```bash
 npm run dev
 ```
 
-Terminalde Vite tarafindan verilen adrese giderek arayuze erisebilirsiniz.
+Terminalde Vite tarafından verilen adrese giderek arayüze erişebilirsiniz.
 
 ## Backend Konfig
 
-Frontend varsayilan olarak `http://localhost:5000` adresine istek atar.
-Farkli bir API kullaniyorsaniz `src/api/axios.ts` icindeki `baseURL` degerini guncelleyin.
+Frontend varsayılan olarak `http://localhost:5000` adresine istek atar.
+Farklı bir API kullanıyorsanız `src/api/axios.ts` içindeki `baseURL` değerini güncelleyin.
 
 ## SQL Server (Opsiyonel)
 
-Projede SQL Server icin `docker-compose.yml` vardir. Calistirmak icin:
+Projede SQL Server için `docker-compose.yml` vardır. Çalıştırmak için:
 
 ```bash
 docker compose up -d
 ```
 
-## Kimlik Dogrulama (Basic Auth)
+## Kimlik Doğrulama (Basic Auth)
 
-Uygulama Basic Auth kullanir ve oturumu 30 dakika boyunca saklar.
-Sayfa yenilense bile sure dolmadiysa oturum korunur.
+Uygulama Basic Auth kullanır ve oturumu 30 dakika boyunca saklar.
+Sayfa yenilense bile süre dolmadıysa oturum korunur.
 
-## Proje Yapisi (Ozet)
+## Proje Yapısı (Özet)
 
-- `src/components` -> UI bilesenleri
-- `src/stores` -> Zustand store yapilari
+- `src/components` -> UI bileşenleri
+- `src/stores` -> Zustand store yapıları
 - `src/api` -> Axios config ve interceptor
-- `src/types.ts` -> Tip tanimlari
-# assetTracker
+- `src/types.ts` -> Tip tanımları
